@@ -1,0 +1,477 @@
+html{
+    width:1366px;
+    
+}
+
+body{
+    font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+
+    /*font-size: 1.6rem;*/
+}
+
+.wrapper{
+    /*width: 1366px;*/
+    width: 100%;
+    padding: 60px 0;
+}
+
+.en_title{
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.en_capt_title{
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;    
+}
+
+.jp_title{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.5em;
+}
+
+.txt_yellow{
+    color: #ffd61a;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.back_gray{
+    background-color: #fafafa;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~*
+ *  Header
+ * ~~~~~~~~~~~~~~~~~~~~~~~*/
+.header_wrapper{
+    display:flex;
+    /*display:-webkit-box;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_img{
+    margin-left: 20px;
+}
+
+.nav_list{
+    display: flex;
+    /*display:-webkit-box;*/
+
+}
+.nav_item{
+    text-transform: uppercase;
+    padding: 50px 25px;
+    font-size: 21px;;
+}
+
+.nav_item > a {
+    color:  #202020;
+    /*display:    block;*/
+}
+
+.site-title{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+.site-subtitle{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.hero-image{
+    position: relative;
+}
+.hero-image__text{
+    top: 50%;
+    left:50%;
+    transform: translate3d(-50%,-50%,0);
+    color: white;
+    position: absolute;
+    margin: auto;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~*
+ *  About
+ * ~~~~~~~~~~~~~~~~~~~~~~~*/
+.about_images{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 20px;
+}
+
+.body_txt{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*---for slide show (About)-----*/
+.slider {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+  }
+  /*
+  .slider-item {
+    width: 300px;
+    height:
+    float: left;
+  }*/
+  /*
+  img{
+    width:100%;
+  }*/
+  .slider-inner {
+    width: 300%;
+    animation: slider 10s infinite ease;
+    display: flex;
+}
+
+  @keyframes slider {
+    0% {
+        transform: translateX(60px);
+    }
+    25% {
+        transform: translateX(-295px);
+    }
+    50% {
+        transform: translateX(-695px);
+    }
+    75% {
+        transform: translateX(-1050px);
+    }
+    100% {
+        transform: translateX(60px);
+    }
+  }
+
+/*---for slide show-----*/
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~*
+ *  Course
+ * ~~~~~~~~~~~~~~~~~~~~~~~*/
+ .course_txt{
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5em;    
+}
+
+ .flex_container{
+    display:flex;
+    align-items: center;
+}
+
+.flex_container .element_inner_txt{
+    width: 430px;
+    margin:0 0 0 auto;
+    padding: 0 50px;
+}
+
+.flex_container_rev{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+
+.flex_container_rev .element_inner_txt{
+    width: 430px;
+    margin:0 auto 0 0;
+    padding: 0 50px;
+}
+
+.element_image{
+    width: 50%;
+}
+
+.element_image img{
+    width: 100%;
+}
+
+.element_txt{
+    width: 50%;
+}
+
+.element_title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~*
+ *  News
+ * ~~~~~~~~~~~~~~~~~~~~~~~*/
+.news_list{
+    display: flex;
+    justify-content: center;
+
+} 
+.news_item{
+    width: 300px;
+    padding: 0 15px;
+}
+.news_img{
+    margin-bottom: 30px;
+}
+.news_date{
+    margin-bottom: 24px;
+}
+
+.news_txt{
+    margin-bottom: 60px;
+}
+
+.btn{
+    display: block;
+    text-align: center;
+    margin: auto;
+    background-color: #ffd61a;
+    width:300px;
+    padding: 21px 0;
+    /*height: 60px;*/
+    color:#fff;
+    font-size: 18px;
+}
+
+.btn:hover {    
+    background-color:coral;
+  }
+
+/*---for slide show(News)-----*/
+.slider_news {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    
+  }
+.slider-item_news {
+    width: 300px;
+    /*height: */
+    /*float: left;*/
+    /*width: 300px;*/
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  /*
+  img{
+    width:100%;
+  }*/
+  .slider-inner_news {
+    width: 300%;
+    animation: slider_news 20s infinite ease;
+    /*display: flex;*/
+    padding: 0 15px;
+}
+  
+  @keyframes slider_news {
+    0% {
+        transform: translateX(15px);
+    }
+    5% {
+        transform: translateX(15px);
+    }
+    15% {
+        transform: translateX(-345px);
+    }
+    25% {
+        transform: translateX(-705px);
+    }
+    35% {
+        transform: translateX(-1065px);
+    }
+    45% {
+        transform: translateX(-1425px);
+    }
+    55% {
+        transform: translateX(-1785px);
+    }
+    65% {
+        transform: translateX(-2145px);
+    }
+    75% {
+        transform: translateX(-2505px);
+    }
+    85% {
+        transform: translateX(-2865px);
+    }
+    100% {
+        transform: translateX(15px);
+    }
+
+  }
+/*---for slide show-----*/
+
+  
+/* ~~~~~~~~~~~~~~~~~~~~~~*
+ *  Access
+ * ~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.access_title{
+    line-height: 50px;
+    width: 140px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.access_item{
+    line-height: 50px;
+    width: 400px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.access_tbl{
+    margin:60px auto 0;
+}
+
+.access_tbl_hdr{
+    text-align: left;
+    width: 150px;
+}
+.access_tbl_itm{
+    text-align: left;
+}
+
+.access_tbl_row{
+    line-height: 50px;
+    padding:5px 0;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~*
+ *  Contact
+ * ~~~~~~~~~~~~~~~~~~~~~~~*/
+.contact_tbl{
+    margin:70px auto 0;
+    
+    border-top: 2px solid #cacaca;
+    border-bottom: 2px solid #cacaca;
+    
+}
+.contact_txt{
+    margin-bottom: 30px;
+    text-align: center;
+} 
+
+.contact_tbl_hdr{
+    text-align: left;
+    width: 160px;
+    /*background-color: skyblue;*/
+    vertical-align: middle;
+    margin: 8px;
+    padding:8px 64px 8px 16px;
+    border-bottom: 1px solid #bfbfbf;
+    border-right: solid 1px #bfbfbf;
+}
+
+.contact_tbl_itm{
+    text-align: left;
+    width: 400px; 
+    /*background-color: beige;*/
+    
+}
+
+input.form_input{
+    height: 36px;
+    box-sizing: border-box;
+    width: 328px;
+    
+    margin: 8px;
+    font-size: 16px;
+    border: solid 1px #bfbfbf;
+}
+
+select.form_input{
+    
+    box-sizing: border-box;
+    height: 36px;
+    width: 328px;
+    margin: 8px;
+    border: solid 1px #bfbfbf;
+    font-size: 16px;
+}
+
+textarea.form_input{
+    width: 328px;
+    box-sizing: border-box;
+    margin: 8px;
+    
+    border: solid 1px #bfbfbf;
+    
+}
+
+.contact_tbl_chbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_tbl_row{
+    border-bottom: solid 1px #bfbfbf;
+}
+
+.cb_lbl{
+    margin-left: 8px;
+    padding: 24px 0;
+    /*padding: 12px 20px;*/
+    letter-spacing: -0.05em;
+
+}
+
+
+.ch_box{
+    margin-right: 15px;
+}
+
+.submit-btn{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    margin: 30px auto 140px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~*
+ *  Footer
+ * ~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer{
+    background-color: #707070;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.copyrights{
+    color: #fff;
+}
+
+.form_wrapper{
+    padding: 60px auto 140px;
+}
+
